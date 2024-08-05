@@ -11,13 +11,15 @@ setMyGitHubRepositories()
 </script>
 
 <template>
-  <GitHubRepository
-    v-for="repository in myGitHubRepositories"
-    :key="repository.id"
-    :repositoryName="repository.name"
-    :repositoryDescription="repository.description"
-    :repositoryHtmlUrl="repository.html_url"
-    :repositogyLanguage="repository.language"
-    class="mb-4"
-  />
+  <div class="grid grid-cols-4">
+    <GitHubRepository
+      v-for="repository in myGitHubRepositories"
+      :key="repository.id"
+      :repositoryName="repository.name"
+      :repositoryDescription="repository.description"
+      :repositoryHtmlUrl="repository.html_url"
+      :repositogyLanguage="repository.language"
+      class="mb-4"
+    />
+  </div>
 </template>
