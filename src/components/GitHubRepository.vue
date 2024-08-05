@@ -1,4 +1,6 @@
 <script setup>
+import LanguageIcon from './language_icons/LanguageIcon.vue'
+
 const props = defineProps({
   repositoryName: String,
   repositoryDescription: String,
@@ -16,5 +18,6 @@ const props = defineProps({
       {{ props.repositoryName }}
     </h4>
     <p class="font-light">{{ props.repositoryDescription }}</p>
+    <LanguageIcon :languageName="props.repositogyLanguage" />
   </a>
 </template>
