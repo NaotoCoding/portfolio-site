@@ -11,7 +11,7 @@ setMyGitHubRepositories()
 </script>
 
 <template>
-  <div class="grid grid-cols-4">
+  <div class="grid grid-cols-3">
     <GitHubRepository
       v-for="repository in myGitHubRepositories"
       :key="repository.id"
