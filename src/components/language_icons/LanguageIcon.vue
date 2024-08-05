@@ -1,6 +1,5 @@
 <script setup>
 import { defineAsyncComponent } from 'vue'
-import { defineProps } from 'vue'
 
 const props = defineProps({
   languageName: String
